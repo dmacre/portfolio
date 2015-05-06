@@ -4,39 +4,75 @@
 <head>
     <title>Portfolio Assignment</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-<body>
-    <nav id="myNavbar" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">DAN MACRE</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="services.html" target="_blank">SERVICES</a></li>
-                <li><a href="blog.html" target="_blank">BLOG</a></li>
-                <li><a href="pages.html" target="_blank">PAGES</a></li>
-                <li><a href="features.html" target="_blank">FEATURES</a></li>
-                <li><a href="megamenu.html" target="_blank">MEGA MENU</a></li>
-                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
-    </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<body>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="jumbotron">
                 <h1>DAN MACRE</h1>
                 <h3>PORTFOLIO</h3>
                 <h4>Front End Developer</h4>
-            </div>
-            <div class="banner">
+                <div class="banner">
+                </div>
             </div>
             <div class="beautiful">
                 <div class="container-fluid">
@@ -50,6 +86,8 @@
             </div>
             <div class="passion">
                 <div class='container-fluid' <div class="row">
+                    <div class="col-md-2">
+                        <i class="fa fa-heart-o"></i></div>
                     <div class="col-md-3">
                         <h4>Passion</h4>
                         <p>
@@ -133,22 +171,26 @@
                                             <div class="col-md-6">
                                                 <h4> WANT TO WORK WITH US?</h4>
                                                 <p>We are a dynamic firm seeking not only people good at their job but also people who are good. We take a very active role in our community and as a team give back through special projects. We also have a strong promote from within policy for your futureadvancement.</p>
+                                                <form id="newsletter" class="form-inline newsletter" role="form">
+                                                    <label class="sr-only" for="exampleInputEmail">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address">
+                                                    <a href="mail to:dan.macre@gmail.com" button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="background-color:#1ABB9C;">GET IN TOUCH</a></button>
+                                                </form>
                                             </div>
                                             <div class="col-md-3"></div>
                                         </div>
                                         <div class="row" id="get in touch">
                                             <div class="col-md-5"></div>
                                             <div class="col-md-2"></div>
-                                            <div><a href="http://www.goldcoastwebdesigns.com/dl/aff-masters.pdf" button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="background-color: green;">
-                            Get In Touch</a></button>
-                                            </div>
-                                            <footer class="dark-bg">
-                                                <div class="container inner">
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                        </div>
+                                        </div>
+                                        <footer class="dark-bg">
+                                            <div class="container inner">
+                                                <div class="row">
+                                                    <div class="col-md-5">
                                                     </div>
-                                                    <div class="footer 1">
+                                                </div>
+                                                <div class="footer 1">
+                                                    <div class="flexbox">
                                                         <div class="container-fluid">
                                                             <div class="row">
                                                                 <div class="col-md-3">
@@ -177,8 +219,7 @@
                                                                 <form id="newsletter" class="form-inline newsletter" role="form">
                                                                     <label class="sr-only" for="exampleInputEmail">Email address</label>
                                                                     <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address">
-                                                                    <a href="http://www.goldcoastwebdesigns.com/dl/aff-masters.pdf" button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="background-color: green;">
-                            Subscribe</a></button>
+                                                                    <a href="mail to:dan.macre@gmail.com" button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="background-color:#1ABB9C;">Subscribe</a></button>
                                                                 </form>
                                                             </div>
                                                             <div class="footer-bottom">
@@ -202,7 +243,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                            </footer>
+                                        </footer>
 </body>
 
 </html>
